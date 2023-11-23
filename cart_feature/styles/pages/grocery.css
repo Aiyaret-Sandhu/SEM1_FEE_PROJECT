@@ -1,0 +1,575 @@
+.main {
+  margin-top: 120px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@400;700;900&display=swap');
+
+
+:root
+{
+    --green: green ;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.1);
+    --border: .2rem solid rgba(0,0,0,0.1);
+    --outline: .1rem solid rgba(0,0,0,0.1);
+}
+
+*
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+
+html 
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body
+{
+    background-image: linear-gradient(to right,rgb(182, 244, 146), rgba(51, 139, 147,0.9));
+}
+
+/* CSS CODE for banner*/
+section
+{
+    padding: 4rem 9%;
+    /* margin-bottom: 3rem; */
+}
+
+.heading
+{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: var(--black);
+}
+
+.heading span
+{
+    background-color: var(--green);
+    color: #fff;
+    display: inline-block;
+    padding: 0.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+
+.features .box-container
+{
+    border: 0 solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.product-container
+{
+    border: 0 solid red;
+    padding: 4rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.7rem;
+    margin: 0.5rem 0.5rem;
+}
+
+.product-container:hover
+{
+    box-shadow: 0px 0px 7px 5px rgb(26, 171, 26);
+}
+
+.btn
+{
+    border: 0 solid var(--black);
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+    box-shadow: 0px 1px 7px rgba(0, 100, 0, 0.75);
+}
+
+.btn:hover
+{
+    background: var(--green);
+    color: #fff;
+}
+
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 4%;
+    background: #fff;
+    /* box-shadow: 0px 20px 100px rgba(11, 172, 11,0.5); */
+}
+
+.header .logo 
+{
+    margin: -20px 0;
+    padding-right: -100px;
+}
+
+.header .logo .groco_logo
+{
+    width: 24rem;
+}
+
+
+.header .navbar a 
+{
+    font-size: 1.8rem;
+    margin: 0 1.5rem;
+    color: var(--black);
+}
+
+.header .navbar a:hover
+{
+    color: var(--green);
+}
+
+.header .navbar a::after
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: green;
+    border-radius: 0.5rem;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: all 1s;
+}
+
+.header .navbar a:hover::after
+{
+    transform: scaleX(1);
+}
+
+.header .icons div
+{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    border-radius: 0.5rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.header .icons div:hover 
+{
+    background: var(--green);
+    cursor: pointer;
+    color: white;
+}
+
+
+#menu-btn
+{
+    display: none;
+}
+
+.header .navbar.active
+{
+    right: 2rem;
+    transition: 0.4s linear;
+}
+
+.header .search-form
+{
+   position: absolute;
+   top: 110%;
+   right: -110%; 
+   width: 50rem;
+   height: 5rem;
+   background: #fff;
+   border-radius: 0.5rem;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   border: 0 solid;
+   box-shadow: var(--box-shadow);
+}
+
+.header .search-form.active
+{
+    right: 2rem;
+    transition: 0.4s linear;
+}
+
+.header .search-form input
+{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0 1.5rem;
+}
+
+.header .search-form label
+{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .search-form label:hover
+{
+    color: var(--green);
+}
+
+.header .shopping-cart 
+{
+    border: 0 solid;
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    width: 35rem;
+    background: #fff;
+}
+
+.header .shopping-cart.active
+{
+    right: 2rem;
+    transition: 0.4s linear;
+}
+
+.header .shopping-cart .box
+{
+    border: 0 solid blue;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.header .shopping-cart .box img
+{
+    height: 10rem;
+}
+
+.header .shopping-cart .box .fa-trash
+{
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    cursor: pointer;
+    color: var(--light-color);
+    transform: translateY(-50%);
+}
+
+.header .shopping-cart .box .fa-trash:hover
+{
+    color: var(--green);
+}
+
+.header .shopping-cart .box .content h3
+{
+    color: var(--black);
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.header .shopping-cart .box .content span
+{
+    color: var(--light-color);
+    font-size: 1.6rem;
+}
+
+.header .shopping-cart .box .content .quantity
+{
+    padding-left: 1rem;
+}
+
+.header .shopping-cart .total
+{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--black);
+}
+
+.header .shopping-cart .btn
+{
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.header .login-form
+{
+    border: 0px solid;
+    position: absolute;
+    top: 110%;
+    width: 35rem;
+    right: -110%;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    text-align: center;
+}
+
+.header .login-form.active
+{
+    right: 2rem;
+    transition: 0.4s linear;
+}
+
+.header .login-form h3
+{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.header .login-form .box
+{
+    border: 0px solid;
+    margin: 0.7rem 0;
+    background: #eee;
+    border-radius: 0.5rem;
+    padding: 1rem ;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    width: 100%;
+}
+
+.header .login-form p
+{
+    font-size: 1.4rem;
+    padding:.5rem 0 ;
+    color: var(--light-color);
+}
+
+.header .login-form p a
+{
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.products-grid {
+  display: grid;
+
+  /* - In CSS Grid, 1fr means a column will take up the
+       remaining space in the grid.
+     - If we write 1fr 1fr ... 1fr; 8 times, this will
+       divide the grid into 8 columns, each taking up an
+       equal amount of the space.
+     - repeat(8, 1fr); is a shortcut for repeating "1fr"
+       8 times (instead of typing out "1fr" 8 times).
+       repeat(...) is a special property that works with
+       display: grid; */
+  grid-template-columns: repeat(6, 1fr);
+}
+
+/* @media is used to create responsive design (making the
+   website look good on any screen size). This @media
+   means when the screen width is 2000px or less, we
+   will divide the grid into 7 columns instead of 8. */
+@media (max-width: 2000px) {
+  .products-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* This @media means when the screen width is 1600px or
+   less, we will divide the grid into 6 columns. */
+@media (max-width: 1600px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1300px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-container {
+  padding-top: 40px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  box-shadow: 0px 1px 4px rgba(0,0,0,0.25);
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.product-container:hover {
+  box-shadow: 3px 3px 3px 3px rgba(11, 172, 11,0.5);
+}
+
+.product-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  /* Images will overflow their container by default. To
+    prevent this, we set max-width and max-height to 100%
+    so they stay inside their container. */
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-name {
+  /* height: 40px; */
+  margin-bottom: 5px;
+  padding-bottom: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 4px;
+  font-size: 2.3rem;
+  /* color: navy; */
+  /* background-color: lightgreen; */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  border-bottom: 1px solid #d6caca;
+  border-top: 1px solid #d6caca;
+  /* background-color: lightgrey; */
+  border-radius: 3px;
+}
+
+.product-rating-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-rating-stars {
+  width: 100px;
+  margin-right: 6px;
+}
+
+.product-rating-count {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+.product-price {
+  font-weight: 700;
+  margin: 20px 0;
+  font-size: 20px;
+  color: green;
+  background-color: rgba(180,180,180,0.1);
+  padding: 0.5rem 2rem;
+}
+
+.product-quantity-container {
+  margin-bottom: 17px;
+  width: 20px;
+}
+
+.product-spacer {
+  flex: 1;
+}
+
+.added-to-cart {
+  color: rgb(6, 125, 98);
+  font-size: 16px;
+
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+
+  /* At first, the "Added to cart" message will
+     be invisible. Use JavaScript to change the
+     opacity and make it visible. */
+  opacity: 0;
+}
+
+.added-to-cart img {
+  height: 20px;
+  margin-right: 5px;
+}
+
+.add-to-cart-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-to-cart-button:hover {
+    color: green;
+    background-color: #eee;
+    border: 1px solid green;
+    box-shadow: 0px 1px 7px rgba(11, 172, 11,0.5);
+}
+
+.add-to-cart-button:active {
+  transform: scaleX(-1) translateY(3px);
+}

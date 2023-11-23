@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>
+            The Groco ~ the Online Grocery Store,  Shop from a wide range of fresh vegetables, fruits, meat and dairy products 
+        </title>
+
+        <link rel="icon" type="image/icon" href="image/favicon.PNG">
+
+        <!--Code for font awesome cdn -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+        <!--Code for font awesome cdn -->
+
+        <meta name="description" content="The Groco - Online grocery store , wide range of products , great deals , high end products , cheap | low prices , home delivery , online payment , cash on delivery , Buy "/>
+
+        <!--Code for linking CSS file-->
+
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+
+        <!--Code for linking CSS file-->
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    </head>
+
+    <body>
+
+        <!-- header section -->
+
+        <header class="header">
+
+            <a href="#" class="logo">
+                <img class="groco_logo" src="image/logo.png" alt="THE GROCO LOGO">
+            </a>
+
+            <nav class="navbar">
+                <a href="#home">| Home |</a>
+                <a href="#features"> | Features | </a>
+                <a href="#products"> | Products | </a>
+                <a href="#categories"> | Categories | </a>
+                <a href="#review"> | Review | </a>
+                <a href="#blogs"> | Blogs | </a>
+            </nav>
+
+            <div class="icons">
+                <div class="fa fa-bars" id="menu-btn" alt="menu button"></div>
+                <div class="fa fa-search" id="search-btn" alt="search button"></div>
+                <div class="fa fa-shopping-cart" id="cart-btn" alt="cart button"></div>
+                <div class="fa fa-user" id="login-btn" alt="login button"></div>
+            </div>
+
+            <form class="search-form">
+                <input type="search" id="search-box" placeholder="Search Here.....">
+                <label for="search-box" class="fa fa-search"></label>
+            </form>
+
+            <div class="shopping-cart">
+                <div class="box">
+                    <i class="fa fa-trash"></i>
+                    <img src="image/cart-img-1.png" alt="Watermelon image">
+
+                    <div class="content">
+                        <h3>Watermelon</h3>
+                        <span class="price">₹110.00/-</span>
+                        <span class="quantity">Qty : 1</span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fa fa-trash"></i>
+                    <img src="image/cart-img-2.png" alt="Onion image">
+
+                    <div class="content">
+                        <h3>Onion</h3>
+                        <span class="price">₹25.00/-</span>
+                        <span class="quantity">Qty : 2</span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fa fa-trash"></i>
+                    <img src="image/cart-img-3.png" alt="chicken image">
+
+                    <div class="content">
+                        <h3>Chicken</h3>
+                        <span class="price">₹250.00/-</span>
+                        <span class="quantity">Qty : 1</span>
+                    </div>
+                </div>
+
+                <div class="total"> total : ₹410.00/- </div>
+                <a href="cart_feature/main.html" class="btn" target="_blank"> Buy now </a>
+
+            </div>
+
+            <form action="#" class="login-form">
+                <h3>LOGIN NOW</h3>
+                <input type="email" placeholder="your email" class="box">
+                <input type="password" placeholder="your password" class="box">
+
+                <p>Forgot Your Password? <a target="_blank" href="forgot_password/index.html">Click Here</a> </p>
+                <p>Don't Have an Account? <a target="_blank" href="login/index.html">Create Now</a> </p>
+
+                <input type="submit" value="Login Now" class="btn">
+            </form>
+
+        </header>
+        <!-- header section -->
+
+        <!-- Banner Section -->
+        <section class="home" id="home">
+            <div class="content">
+                <h3>Fresh and <span>Organic</span> Products For You</h3>
+                <p>We emphasize on our motto of 
+                    <pre><i style="color: green;">" Buy Anything , 
+                              Love Everything "
+                </i></pre> <p>to deliver the best farm fresh goods to our customers so they may enjoy the lavish experience of good quality products. </p> </p>
+
+                <a href="#" class="btn">shop now</a>
+            </div>
+        </section>
+        <!--Banner Section-->
+
+        <!--our features section -->
+        <section class="features" id="features">
+            <h1 class="heading"> our <span>features</span></h1>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="image/feat1.jpg" alt="brocolli image">
+                    <h3>fresh and organic</h3>
+                    <p> We purchase the goods directly from the fields via partnership with about 25K farmers.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+
+                <div class="box">
+                    <img src="image/feat2.png" alt="delivery man image">
+                    <h3>Instant Delivery</h3>
+                    <p>Get your order delivered within 2 working hours, Now that's fast </p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+
+                <div class="box">
+                    <img src="image/feat3.jpg" alt="payment options image">
+                    <h3>extensive payment options</h3>
+                    <p>now pay for groceries via Cash, UPI, debit and Credit Card! whichever way YOU like .</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+
+            </div>
+
+        </section>
+        <!--our features section -->
+
+        <!-- our products section -->
+        <section class="products" id="products">
+            <h1 class="heading"> our <span> products </span> </h1>
+
+            <div class="swiper product-slider">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide box">
+                        <img src="image/product-1.png" alt="orange image">
+                        <h1>Fresh orange</h1>
+                        <div class="price">₹12.99/- - ₹15.99/-</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="image/product-2.png" alt="onion image">
+                        <h1>Fresh Onion</h1>
+                        <div class="price">₹25.5/- - ₹30.5/-</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="image/product-3.png" alt="meat image">
+                        <h1>Fresh meat</h1>
+                        <div class="price">₹250.00/- - ₹300.00/-</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="image/product-4.png" alt="cabbage image">
+                        <h1>Fresh cabbage</h1>
+                        <div class="price">₹7.50/- - ₹12.00/-</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+
+                </div> 
+
+            </div>
+
+            <div class="swiper product-slider">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide box">
+                        <img src="image/product-5.png" alt="potato image">
+                        <h1>Fresh potato</h1>
+                        <div class="price">₹5.00/- - ₹10.00/-</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="image/product-6.png" alt="avacado image">
+                        <h1>Fresh avacado</h1>
+                        <div class="price">₹50.00/- - ₹100.00/-</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="image/product-7.png" alt="carrot image">
+                        <h1>Fresh carrot</h1>
+                        <div class="price">₹10.00/- - ₹15.00/-</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="image/product-8.png" alt="lime image">
+                        <h1>Fresh lime</h1>
+                        <div class="price">₹50.00/- - ₹150.00/-</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+
+                </div> 
+
+            </div>
+
+        </section>
+        <!-- our products section -->
+
+        <!-- our Categories section -->
+        <section class="categories" id="categories">
+            <h1 class="heading"> product <span> categories </span></h1>
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="image/cat-1.png" alt="vegetables">
+                    <h3>Vegetables</h3>
+                    <p>upto 45% off</p>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+
+                <div class="box">
+                    <img src="image/cat-2.png" alt="fruits">
+                    <h3>fresh fruits</h3>
+                    <p>upto 30% off</p>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+
+                <div class="box">
+                    <img src="image/cat-3.png" alt="dairy products">
+                    <h3>dairy products</h3>
+                    <p>upto 10% off</p>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+
+                <div class="box">
+                    <img src="image/cat-4.png" alt="meat">
+                    <h3>fresh meat</h3>
+                    <p>upto 25% off</p>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+
+            </div>
+        </section>
+        <!-- our Categories section -->
+
+
+        <!-- Review section -->
+        <section class="review" id="review">
+            <h1 class="heading">Customer's <span>review</span></h1>
+
+            <div class="swiper review-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide box">
+                        <img src="image/pic-1.png" alt="customer image-1">
+                        <p>The Groco is a great grocery store. It has a wide variety of fresh produce, meats, and cheeses.The prices are reasonable.</p>
+                        <h3>Namit Shahari</h3>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="image/pic-2.png" alt="customer image-2">
+                        <p>The Groco is a wonderful grocery store with an extensive selection of fresh, high-quality products.I highly recommend this store</p>
+                        <h3>Leeza Jain</h3>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                            <!-- <i class="fa fa-star-half"></i> -->
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="image/pic-3.png" alt="customer image-3">
+                        <p> The Groco is my go-to grocery store. They have a great selection of fresh produce, meats, fruits and vegetables</p>
+                        <h3>Rehan Chalana</h3>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="image/pic-4.png"  alt="customer image-4">
+                        <p> The Groco grocery store is a fantastic place to shop. I highly recommend The Groco to anyone looking for a great grocery store.</p>
+                        <h3>Emilia Clarke</h3>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Review section -->
+
+        <!-- Blog section -->
+        <section class="blogs" id="blogs">
+            <h1 class="heading"> our <span> blogs </span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="image/blog-1.jpg" alt="blog image 1">
+                    <div class="content">
+                        <div class="icons">
+                            <a href="#"><i class="fa fa-user"></i> By Linda Tim </a>
+                            <a href="#"><i class="fa fa-calendar"></i> 1st May , 2021 </a>
+                        </div>
+                        <h3> fresh and organic vegetables and fruits </h3>
+                        <p>Organic vegetables are those that are grown without the use of synthetic pesticides, herbicides, fertilizers, or other chemicals.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="image/blog-2.jpg" alt="blog image 2">
+                    <div class="content">
+                        <div class="icons">
+                            <a href="#"><i class="fa fa-user"></i> By Zen Mado </a>
+                            <a href="#"><i class="fa fa-calendar"></i> 22nd Dec , 2022 </a>
+                        </div>
+                        <h3> Vegetable Storage , Do's and Don'ts </h3>
+                        <p>Fresh vegetables are those that have been recently harvested and have not been stored for a long period of time.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="image/blog-3.jpg" alt="blog image 3">
+                    <div class="content">
+                        <div class="icons">
+                            <a href="#"><i class="fa fa-user"></i> By Zoro Uzumaki </a>
+                            <a href="#"><i class="fa fa-calendar"></i> 29th Feb , 2022 </a>
+                        </div>
+                        <h3> Era of Organic Vegetables ,  A new Begining </h3>
+                        <p>Organic vegetables are often higher in nutrients than conventionally grown vegetables, and they may also contain fewer pesticides and other chemicals.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+
+            </div>
+            <h1 class="heading" style="font-size: 3rem;"> <a href="blog/blog.html" style="color: rgb(8, 8, 75);">Read More <span> -> </span></a></h1>
+        </section>
+        <!-- Blog section -->
+
+        <!--footer section-->
+        <section class="footer">
+           <div class="box-container">
+                <div class="box">
+                    <img class="groco_logo" src="image/logo.png" alt="groco main logo"> 
+                    <p>Follow us to get instant updates <br> about new products and deals</p>
+
+                    <div class="share">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h3> Contact info</h3>
+                    <a href="#" class="links"> <i class="fa fa-phone"> </i> +91 628 047 9311 </a>
+                    <a href="#" class="links"> <i class="fa fa-phone"> </i> +91 628 047 9389 </a>
+                    <a href="#" class="links"> <i class="fa fa-envelope"> </i> infogroco011@gmail.com </a>
+                    <a href="#" class="links"> <i class="fa fa-map-marker"> </i> Rajpura , India -140401 </a>
+
+                </div>
+
+                <div class="box">
+                    <h3> quick links </h3>
+                    <a href="#home" class="links"> <i class="fa fa-arrow-right"> </i> home </a>
+                    <a href="#features" class="links"> <i class="fa fa-arrow-right"> </i> features </a>
+                    <a href="#products" class="links"> <i class="fa fa-arrow-right"> </i> products </a>
+                    <a href="#categories" class="links"> <i class="fa fa-arrow-right"> </i> categories </a>
+                    <a href="#review" class="links"> <i class="fa fa-arrow-right"> </i> review </a>
+                    <a href="#blogs" class="links"> <i class="fa fa-arrow-right"> </i> Blogs </a>
+
+                </div>
+
+                <div class="box">
+                    <h3> newsletter </h3>
+                    <p> subscribe for latest updates </p>
+                    <input type="email" placeholder="Your Email" class="email">
+                    <input type="submit" value="subscribe" class="btn">
+                    <img src="image/payment.png" class="payment-img">
+                </div>
+                
+           </div> 
+
+           <div class="hrline"> </div>
+           
+            <div class="maps"
+                    <p> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.1751352098267!2d76.65720287545435!3d30.
+                    516086474689573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fc32344a6e2d7%3A0x81b346dee91799ca!2sChitkara%20University!5e0!3m2!1sen!2sin!4v16
+                    98407391011!5m2!1sen!2sin" width="1245rem;"
+                    height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </p>
+            </div>
+    
+
+           <div class="credit">
+                Created By <span> Arsh, Arpan, Arpit and Arshita </span> | &#169; All Rights Reserved
+           </div>
+        </section>
+        <!--footer section-->
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+        <!--Code for linking JAVASCRIPT file-->
+
+        <script src="js/script.js"></script>
+
+        <!--Code for linking JAVASCRIPT file-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        
+        <script src="authorscript.js"></script>
+    
+        
+    </body>
+
+</html>
