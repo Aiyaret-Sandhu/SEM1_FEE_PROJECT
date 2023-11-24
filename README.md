@@ -1,9 +1,9 @@
 # The Groco 🛒
 ## Made by :
-#### 🌟 Arshdeep ! 
-#### 🌟 Arpan !
-#### 🌟 Arpit !
-#### 🌟 Arshita !
+#### 🌟 Arshdeep  
+#### 🌟 Arpan 
+#### 🌟 Arpit 
+#### 🌟 Arshita 
 
 
 The groco is a grocery website with a built in cart ,sign up, login ,blog and review page !
