@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Automatic Slide Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .slider {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slides {
+            display: flex;
+            animation: slide-animation 10s infinite; /* Change 10s to control slide interval */
+        }
+
+        .slide {
+            width: 100%;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .slider input[type="radio"] {
+            display: none;
+        }
+
+        @keyframes slide-animation {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(0); }
+            35% { transform: translateX(-100%); }
+            60% { transform: translateX(-100%); }
+            70% { transform: translateX(-200%); }
+            95% { transform: translateX(-200%); }
+        }
+
+        /* Adjust labels to change slide order */
+        #slide1:checked ~ .slides { animation-delay: 0s; }
+        #slide2:checked ~ .slides { animation-delay: -5s; }
+        #slide3:checked ~ .slides { animation-delay: -10s; }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <div class="slides">
+            <div class="slide">
+                <img src="https://via.placeholder.com/600x400?text=Slide%201" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/600x400?text=Slide%202" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/600x400?text=Slide%203" alt="Slide 3">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
