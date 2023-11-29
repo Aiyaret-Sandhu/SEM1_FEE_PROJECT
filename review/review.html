@@ -385,27 +385,70 @@
                     </div>
                 </div>
             </div>
-            <div class="wrapper">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <form action="#">
-                    <div class="rating">
-                        <input type="number" name="rating" hidden>
-                        <i class='bx bx-star star' style="--i: 0;"></i>
-                        <i class='bx bx-star star' style="--i: 1;"></i>
-                        <i class='bx bx-star star' style="--i: 2;"></i>
-                        <i class='bx bx-star star' style="--i: 3;"></i>
-                        <i class='bx bx-star star' style="--i: 4;"></i>
+            <div class="testimonial-box" id="display">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <!-- <div class="profile-img">
+                            <img src="images/c-4.jpg" />
+                        </div> -->
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong class="userName"></strong>
+                            <span class="userId"></span>
+                        </div>
                     </div>
-                    <textarea name="opinion" cols="1" rows="1" placeholder="Your name..."></textarea>
-                    <textarea name="opinion" cols="1" rows="1" placeholder="Your I'd..."></textarea>
-                    <textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..."></textarea>
+                    <!--reviews------>
+                    <!-- <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>--><!--Empty star-->
+                    </div> 
+                </div>
+                <!--Comments---------------------------------------->
+                <div class="client-comment">
+                    <p class="userReview"></p>
+                </div>
+            </div>
+
+            <div id = "review"></div>
+
+            <div class="wrapper">
+                <h3>Enter Your Comment Here </h3>
+                <div class="rating">
+                    <input type="number" name="rating" hidden>
+                    <i class='bx bx-star star' style="--i: 0;"></i>
+                    <i class='bx bx-star star' style="--i: 1;"></i>
+                    <i class='bx bx-star star' style="--i: 2;"></i>
+                    <i class='bx bx-star star' style="--i: 3;"></i>
+                    <i class='bx bx-star star' style="--i: 4;"></i>
+                </div>
+                <form id="commentForm">
+                    <label for="name"></label>
+                    <input type="text" id="name" name="opinion" placeholder="Your Name here ..." required>
+                    <br>
+                    <label for="id"></label>
+                    <input type="text" id="id" name="opinion" placeholder="Your Id here ..." required>
+                    <br>
+                    <label for="comment"></label>
+                    <textarea id="comment" name="opinion" placeholder="Your Review here ..." required></textarea>
+                    <br>
                     <div class="btn-group">
-                        <button type="submit" class="btn submit">Submit</button>
+                        <button type="submit" class="btn submit" onclick="addReview();">Submit</button>
                         <button class="btn cancel">Cancel</button>
                     </div>
                 </form>
+                <div id="display"></div>
             </div>
+        
         </section>
         <script src="review.js"></script>
+
+        <script src="review2.js">
+        </script>
     </body>
     </html>

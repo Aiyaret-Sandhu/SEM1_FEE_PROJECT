@@ -141,7 +141,8 @@ a{
 }
 
 body {
-	background: var(--light);
+	background-color:#63a91f;
+    background-image: linear-gradient(314deg, #63a91f 0%, #1a512e 74%);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -204,7 +205,8 @@ body {
 .rating .star:hover {
 	transform: scale(1.1);
 }
-textarea {
+
+textarea, input {
 	width: 100%;
 	background: var(--light);
 	padding: 1rem;
@@ -212,7 +214,10 @@ textarea {
 	border: none;
 	outline: none;
 	resize: none;
-	margin-bottom: .5rem;
+	margin-bottom: 1rem;
+}
+textarea {
+    height: 8rem;
 }
 .btn-group {
 	display: flex;
