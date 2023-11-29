@@ -247,3 +247,48 @@ textarea {
 .btn-group .btn.cancel:hover {
 	background: var(--light);
 }
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+.nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+
+img
+{
+    width: 100%;
+}
+
+.logo {
+    width: 10rem;
+    border-radius: 0.5rem;
+}
+
+.login
+{
+    padding: 8px 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: green;
+    transition: .3s;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.login:hover
+{
+    background: green;
+    color: white;
+    transition: .3s;
+}
