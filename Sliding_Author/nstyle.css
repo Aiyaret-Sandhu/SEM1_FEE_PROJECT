@@ -2,15 +2,12 @@ section {
 	display: grid;
 	place-items: center;
 	height: 100vh;
-  margin-top: -9%;
+    margin-top: -9%;
 }
 
 .testimonials{
     width: 100% !important;
-    /* padding: 0 15px 50px; */
-   
-    background-color: #ccc;
-    /* color: #ccc; */
+    background-image: radial-gradient(circle at 10% 20%, rgb(43, 199, 188) 0% , rgb(21,249,23) 72.9%); 
     margin-top: -5%;
 }
 .carousel-caption{
@@ -18,8 +15,7 @@ section {
   }
 
   .single-item{
-    background: #ccc;
-    color: #111;
+    color: white;
     padding: 15px;
     margin: 50px 15px;
 }
@@ -35,7 +31,7 @@ section {
 	height: 200px;
 	width: 200px;
 	border-radius: 50%;
-	border: 7px solid rgb(118, 118, 118);
+	border: none;
 }
 
 .bio h4 {
@@ -43,6 +39,7 @@ section {
 }
 
 .content{
+    margin-top: 4rem;
     font-size: 18px;
 }
 .content p {
@@ -51,7 +48,7 @@ section {
 .content p span {
 	font-size: 48px;
 	margin-right: 20px;
-    color: rgb(110, 109, 111);
+    color: white;
 }
 
 .socials i {
