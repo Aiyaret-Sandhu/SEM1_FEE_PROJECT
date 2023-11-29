@@ -80,6 +80,11 @@ button:hover {
     border-color: #fff;
 }
 
+.container button.hidden:hover
+{
+    background-color: #fff;
+}
+
 .container form{
     background-color: #fff;
     display: flex;
