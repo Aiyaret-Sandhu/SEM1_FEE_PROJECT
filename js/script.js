@@ -102,3 +102,4 @@ tl
     .from(".categories", {opacity:0, y:10})
     .from(".review", {opacity:0, y:10})
     .from(".blogs", {opacity:0, y:10})
+

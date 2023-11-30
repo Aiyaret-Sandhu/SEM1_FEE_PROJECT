@@ -1,0 +1,118 @@
+.mainslider {
+    overflow: hidden;
+    width: 100%; /* Adjust width according to your layout */
+    position: relative;
+    /* display: inline-block; */
+    margin: auto 0rem;
+    border-radius: 1rem;
+}
+
+.sliod {
+    display: flex;
+    animation: sliderAnim 30s linear infinite; /* Adjust animation duration as needed */
+}
+
+.fslides {
+    flex: 0 0 100%; /* Set each slide to take full width */
+    transition: transform 1s ease-in-out;
+    margin: auto 1rem;
+    border-radius: 1rem;
+}
+
+@keyframes sliderAnim {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+}
+/* Stop animation on hover */
+.mainslider:hover .sliod {
+    animation-play-state: paused;
+}
+
+  
+
+
+.fslides{
+    width: 100% !important;
+    background-image: radial-gradient(circle at 10% 20%, rgb(28, 175, 165) 0% , rgb(71, 232, 73) 72.9%); 
+    /* margin-top: -5%; */
+}
+/* .carousel-caption{
+    margin-bottom: 7%;
+  } */
+
+  .single-item{
+    color: white;
+    padding: 15px;
+    margin-top: 4rem;
+    /* margin-bottom: -16rem;*/
+    /* margin-left: 6rem; */
+    /* margin-right: 6rem;  */
+}
+
+.profile{
+    margin-bottom: -6rem;
+    text-align: center;    
+}
+.img-area {
+	margin: 0 6rem 6rem 6rem;
+}
+.img-area img {
+    /* margin-top: 2rem; */
+	height: auto;
+	width: 16rem;
+	border-radius: 50%;
+	border: none;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: -3rem;
+}
+
+.bio {
+	font-family: 'Berkshire Swash', cursive;
+}
+
+.col-md .content{
+    /* margin-top: 0rem; */
+    font-size: 1.7rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    margin-top: 4rem;
+}
+.col-md .content p {
+	text-align: justify;
+    margin-top: -1rem;
+}
+.col-md .content p span {
+	font-size: 4rem;
+	margin-right: 20px;
+    color: white;
+}
+
+.socials i {
+	margin: 3rem 2rem;
+    font-size: 3rem;
+}
+
+.AuthorName {
+    font-size: 4rem;
+    margin-top: -2rem;
+}
+
+.AuthorWork {
+    font-size: 2rem;
+}
+
+.AuthorRoll {
+    font-size: 2rem;
+    /* margin-bottom: 4rem; */
+}

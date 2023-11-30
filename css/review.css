@@ -1,0 +1,35 @@
+.slider-container1 {
+    width: 100%;
+    /* max-width: 800px; */
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider1 {
+    width: 300%; /* 3 slides side by side */
+    display: flex;
+    animation: slide-animation 20s infinite; /* Change 12s to control slide interval */
+}
+
+.slide1 {
+    width: 33.33%; /* Each slide takes 33.33% width */
+    flex-shrink: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.column1 {
+    width: 33.33%; /* Each column takes 33.33% width */
+    padding: 10px;
+}
+
+@keyframes slide-animation {
+    0%, 100% { transform: translateX(0); }
+    33.33% { transform: translateX(0); }
+    50% { transform: translateX(-33.33%); }
+    83.33% { transform: translateX(-33.33%); }
+}
+
+/* Adjust labels to change slide order *//*
+#slide1:checked ~ .slider { animation-delay: 0s; }
+#slide2:checked ~ .slider { animation-delay: -14s; } */

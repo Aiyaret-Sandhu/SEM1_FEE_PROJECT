@@ -21,6 +21,7 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: all 0.2s linear;
+    /* animation: carouselAnim 10s linear infinite; */
 }
 
 
@@ -883,5 +884,7 @@ section
 .maps{
     text-align: center;
     /* margin-left: -10rem; */
+    width: 100%;
+    margin: auto;
     
 }
