@@ -43,7 +43,7 @@
 
 .fslides{
     width: 100% !important;
-    background-image: radial-gradient(circle at 10% 20%, rgb(28, 175, 165) 0% , rgb(71, 232, 73) 72.9%); 
+    background-image: radial-gradient(circle at 10% 20%, rgb(55, 210, 200) 0% , rgb(51, 167, 53) 72.9%); 
     /* margin-top: -5%; */
 }
 /* .carousel-caption{
