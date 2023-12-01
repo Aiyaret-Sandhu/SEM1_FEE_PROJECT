@@ -360,7 +360,7 @@ section
     display: flex;
     justify-content: right;
     background: url(../image/banner-img2.jpg) no-repeat ;
-    background-position: right;
+    background-position: left;
     background-size: cover;
     padding-top: 22rem;
     padding-bottom: 17rem;
@@ -370,7 +370,7 @@ section
 {
     text-align: right;
     border: 0 solid;
-    width: 80rem;
+    width: 70rem;
 }
 
 .home .content h3

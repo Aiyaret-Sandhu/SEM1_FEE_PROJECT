@@ -8,8 +8,11 @@
 }
 
 body{
-    background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2, rgb(55, 176, 55));
+    /* background-color: #c9d6ff; */
+    /* background: linear-gradient(to right, #e2e2e2, rgb(55, 176, 55)); */
+    background: url(loginBack.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;

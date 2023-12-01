@@ -8,8 +8,11 @@
 
 body
 {
-    background-color: #c9d6ff;
-    background: linear-gradient(to right,#e2e2e2, rgb(79, 189, 79));
+    /* background-color: #c9d6ff; */
+    /* background: linear-gradient(to right,#e2e2e2, rgb(79, 189, 79)); */
+    background: url(forgot_back.jpg) no-repeat;
+    background-size: cover;
+    background-position: left;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +24,7 @@ body
 {
     background-color: #fff;
     border-radius: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    /* box-shadow: 50px 50px 50px rgba(0, 200, 0, 0.35); */
     position: relative;
     overflow: hidden;
     width: 768px;
@@ -39,7 +42,7 @@ body
 
 .container span
 {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .container a
@@ -50,10 +53,10 @@ body
     margin: 15px 0 10px;
 }
 
-button
+.button , button
 {
     background-color: green;
-    color: #fff;
+    color: white;
     font-size: 12px;
     padding: 10px 45px;
     border: 1px solid transparent;
@@ -65,7 +68,7 @@ button
     cursor: pointer;
 }
 
-button:hover {
+.button:hover, button:hover {
     background-color: white;
     color: green;
     border:1px solid green ;
@@ -93,10 +96,11 @@ button:hover {
 .container input
 {
     background-color: #eee;
+    color: green;
     border: none;
     margin: 8px 0;
     padding: 10px 15px;
-    font-size: 13px;
+    font-size: 16px;
     border-radius: 8px;
     width: 100%;
     outline: none;
@@ -165,7 +169,14 @@ button:hover {
     align-items: center;
     margin: 0 3px;
     width: 40px;
+    transition: all 0.5s;
     height: 40px;
+}
+
+.social-icons a:hover {
+    color: white;
+    background-color: green;
+    border: none;
 }
 
 .toggle-container
