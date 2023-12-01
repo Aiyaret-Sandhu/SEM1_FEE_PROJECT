@@ -20,7 +20,7 @@ document.getElementById('commentForm').addEventListener('submit', function(event
             <div class="profile">
                 <!--img---->
                 <div class="profile-img">
-                    <img src="images/c-4.jpg" />
+                    <img src="images/c-1.jpg" />
                 </div> 
                 <!--name-and-username-->
                 <div class="name-user">
