@@ -1,4 +1,4 @@
-.amazon-header {
+.header {
   background-color: rgb(19, 25, 33);
   color: white;
   padding-left: 15px;
@@ -12,11 +12,12 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 60px;
+  /* padding: -1rem auto; */
+  height: 5rem;
 }
 
 .amazon-header-left-section {
-  width: 180px;
+  width: 160px;
 }
 
 @media (max-width: 800px) {
@@ -39,7 +40,7 @@
 }
 
 .amazon-logo {
-  width: 100px;
+  width: 14rem;
   margin-top: 5px;
 }
 
@@ -61,7 +62,8 @@
 
 .amazon-header-middle-section {
   flex: 1;
-  max-width: 850px;
+  /* max-width: 850px; */
+  /* width: 100rem; */
   margin-left: 10px;
   margin-right: 10px;
   display: flex;
@@ -69,48 +71,33 @@
 }
 
 .search-bar {
-  flex: 1;
-  width: 0;
-  font-size: 20px;
-  height: 48px;
-  padding-left: 15px;
-  border: solid 2px rgb(83, 205, 83);
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  vertical-align: middle;
-  border-color: green;
+  width: 100%;
+  height: 3rem;
+  position: relative;
+  display: flex;
 }
 
-.search-bar:focus {
-  border: solid 2px green;
+.search-bar input[type="text"] {
+  width: 100%;
+  padding: 12px 20px 12px 50px;
+  box-sizing: border-box;
+  border: 0px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #f1f1f1;
+  outline: none;
+  font-size: 1.4rem;
+  color: green;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
 }
 
-.search-button {
-  background-color: rgb(12, 163, 12);
-  border: none;
-  width: 60px;
-  height: 48px;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  flex-shrink: 0;
-  transition: all 0.25s;
-  vertical-align: middle;
-  /* margin-bottom: 12px; */
-}
-
-.search-icon {
-  height: 34px;
-  margin-left: 2px;
-  margin-top: 3px;
-  font-weight: 600;
-  /* color: white; */
-  /* background-color: green; */
-}
-
-.search-button:hover {
-  box-shadow: 0px 1px 7px green;
+.search-bar .icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: green;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 1.4rem;
 }
 
 .amazon-header-right-section {

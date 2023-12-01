@@ -40,6 +40,7 @@ input, select, button {
 .button-primary:hover {
   background-color: rgb(11, 158, 11);
   border: 0px solid green;
+  margin-bottom: 2rem;
 }
 
 .button-primary:active {

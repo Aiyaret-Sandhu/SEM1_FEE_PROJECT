@@ -26,12 +26,13 @@
 }
 
 .checkout-header-left-section {
-  width: 150px;
+  width: 15rem;
 }
 
 .amazon-logo {
-  width: 250px;
-  margin-top: 12px;
+  /* width: 250px;
+  margin-top: 12px; */
+  width: 90%;
 }
 
 .amazon-mobile-logo {
@@ -64,7 +65,7 @@
   text-align: center;
 
   font-size: 2.5rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Verdana;
   /* text-decoration: underline; */
   color: green;
   font-weight: 500;
