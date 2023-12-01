@@ -2,7 +2,7 @@
 
 *
 {
-    font-family: 'Poppins', sans-serif;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -32,6 +32,10 @@ a
 li
 {
     list-style: none;
+}
+
+h3 {
+    font-size: 1.3rem;
 }
 
 img
@@ -76,6 +80,10 @@ header.shadow.logo
     max-width: 1068px;
     margin: auto;
     width: 100%;
+}
+
+body {
+    background-color: rgb(221, 221, 141);
 }
 
 .nav
@@ -150,12 +158,12 @@ header.shadow.logo
 
 .home-title
 {
-    font-size: 3.5rem;
+    font-size: 7rem;
 }
 
 .home-subtitle
 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
@@ -234,6 +242,7 @@ header.shadow.logo
     text-transform: uppercase;
     font-weight: 400;
     margin-top: 4px;
+    transition: all 0.5s;
 }
 
 .post-title:hover
@@ -244,12 +253,13 @@ header.shadow.logo
 .post-decription
 {
     font-size: 0.9rem;
-    line-height: 1.5rem;
+    line-height: 1rem;
     margin: 5px 0 10px;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    text-transform:capitalize;
 }
 
 .profile
@@ -261,8 +271,8 @@ header.shadow.logo
 
 .profile-img
 {
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
@@ -306,12 +316,13 @@ header.shadow.logo
     text-align: center;
     border-radius: 0.5rem;
     font-size: 1.5rem;
+    transition: 0.5s ease-in;
 }
 .social .fa-brands:hover
 {
     background: green;
     color: #fff;
-    transition: 0.5s ease-in;
+    
 }
 
 .post-header
@@ -355,7 +366,8 @@ header.shadow.logo
     font-size: 2.6rem;
     color: white;
     text-align: center;
-    margin-top: 4rem;
+    margin: 4rem auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header-img
@@ -364,6 +376,7 @@ header.shadow.logo
     height: 735px;
     object-fit: cover;
     object-position: center;
+    border-radius: 0.5rem;
 }
 
 .post-content
@@ -377,7 +390,7 @@ header.shadow.logo
 }
 
 .post-date {
-    color:grey;
+    color:rgba(0,0,0,0.7);
 }
 
 .post-text
