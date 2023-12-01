@@ -376,7 +376,7 @@ section
 .home .content h3
 {
     color: var(--black);
-    font-size: 4.4rem;
+    font-size: 4.3rem;
 }
 
 .home .content span
@@ -711,6 +711,18 @@ section
 .blogs .box-container .box.expanded {
     height: auto;
 }
+
+
+.features .box-container .box {
+    /* max-height: 100px; */
+    overflow: hidden;
+    position: relative;
+}
+
+.features .box-container .box.expanded {
+    height: auto;
+}
+
 
 /* footer css */
 .footer

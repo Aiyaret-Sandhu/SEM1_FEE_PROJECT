@@ -9,12 +9,12 @@
 
 .sliod {
     display: flex;
-    animation: sliderAnim 30s linear infinite; /* Adjust animation duration as needed */
+    animation: sliderAnim 24s linear infinite; /* Adjust animation duration as needed */
 }
 
 .fslides {
     flex: 0 0 100%; /* Set each slide to take full width */
-    transition: transform 1s ease-in-out;
+    transition: transform 10s ease-in-out;
     margin: auto 1rem;
     border-radius: 1rem;
 }
