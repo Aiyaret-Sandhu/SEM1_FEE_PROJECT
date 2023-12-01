@@ -9,12 +9,12 @@
 
 .sliod {
     display: flex;
-    animation: sliderAnim 24s linear infinite; /* Adjust animation duration as needed */
+    animation: sliderAnim 30s linear infinite; /* Adjust animation duration as needed */
 }
 
 .fslides {
     flex: 0 0 100%; /* Set each slide to take full width */
-    transition: transform 10s ease-in-out;
+    transition: transform 5s ease-in-out;
     margin: auto 1rem;
     border-radius: 1rem;
 }
@@ -44,6 +44,8 @@
 .fslides{
     width: 100% !important;
     background-image: radial-gradient(circle at 10% 20%, rgba(55, 210, 200, 0.8) 0% , rgba(51, 167, 53 , 0.9) 72.9%); 
+    /* background: url(../image/footer-bg.jpg) no repeat;
+    background-size: cover; */
     /* margin-top: -5%; */
 }
 /* .carousel-caption{
