@@ -54,3 +54,10 @@ windows.onscroll = () =>
 //     .from(".categories", {opacity:0, y:10})
 //     .from(".review", {opacity:0, y:10})
 //     .from(".blogs", {opacity:0, y:10})
+// let more = document.querySelectorAll('.more');
+
+// for (let i=0; i<more.length; i++){
+//  more[i].addEventListener('click',function(){
+//      more[i].parentNode.classList.toggle('active');
+//  });
+// }

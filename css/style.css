@@ -630,6 +630,7 @@ section
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
     gap: 1.5rem;
+    /* height: auto; */
 }
 
 .blogs .box-container .box
@@ -693,9 +694,23 @@ section
     color: var(--light-color);
     font-size: 1.5rem;
     padding-bottom: .5rem 0 ;
+    /* height: 18rem; */
+}
+/* 
+.blogs .box-container {
+    display: flex;
+    flex-direction: column;
+} */
+
+.blogs .box-container .box {
+    /* max-height: 100px; */
+    overflow: hidden;
+    position: relative;
 }
 
-
+.blogs .box-container .box.expanded {
+    height: auto;
+}
 
 /* footer css */
 .footer
