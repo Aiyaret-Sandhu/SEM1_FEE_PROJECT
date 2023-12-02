@@ -14,7 +14,7 @@
 
 .fslides {
     flex: 0 0 100%; /* Set each slide to take full width */
-    transition: transform 5s ease-in-out;
+    transition: transform 30s ease-in-out;
     margin: auto 1rem;
     border-radius: 1rem;
 }
@@ -43,9 +43,13 @@
 
 .fslides{
     width: 100% !important;
-    background-image: radial-gradient(circle at 10% 20%, rgba(55, 210, 200, 0.8) 0% , rgba(51, 167, 53 , 0.9) 72.9%); 
+    /* background-image: radial-gradient(circle at 10% 20%, rgba(55, 210, 200, 0.8) 0% , rgba(51, 167, 53 , 0.9) 72.9%);  */
+    /* background-color: #98FF98; */
+    
     /* background: url(../image/footer-bg.jpg) no repeat;
     background-size: cover; */
+    border-radius: 0.5rem;
+    height: 100%;
     /* margin-top: -5%; */
 }
 /* .carousel-caption{
@@ -54,8 +58,13 @@
 
   .single-item{
     color: white;
+    height: 100%;
     padding: 15px;
     margin-top: 4rem;
+    background: url(../image/footerimg1.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 0.5rem;
     /* margin-bottom: -16rem;*/
     /* margin-left: 6rem; */
     /* margin-right: 6rem;  */
@@ -71,8 +80,8 @@
 .img-area img {
     /* margin-top: 2rem; */
 	height: auto;
-	width: 16rem;
-	border-radius: 50%;
+	width: 20rem;
+	border-radius: 0.5rem;
 	border: none;
     object-fit: contain;
     object-position: center;
@@ -91,12 +100,18 @@
     margin-top: 4rem;
 }
 .col-md .content p {
-	text-align: justify;
+	text-align: center;
     margin-top: -1rem;
 }
+.quote {
+    font-size: 3rem;
+    margin-left: 2rem;
+    color: white;
+}
+
 .col-md .content p span {
 	font-size: 4rem;
-	margin-right: 20px;
+	margin-right: 2rem;
     color: white;
 }
 
@@ -106,15 +121,15 @@
 }
 
 .AuthorName {
-    font-size: 4rem;
+    font-size: 4.6rem;
     margin-top: -2rem;
 }
 
 .AuthorWork {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .AuthorRoll {
-    font-size: 2rem;
+    font-size: 1.6rem;
     /* margin-bottom: 4rem; */
 }

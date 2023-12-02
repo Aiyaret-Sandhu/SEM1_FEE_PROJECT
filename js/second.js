@@ -25,12 +25,13 @@
 document.addEventListener('DOMContentLoaded', function () {
   var swiper = new Swiper(".product-slider", {
       autoplay: {
-          delay: 2500,
+          delay: 3000,
       },
       pagination: {
           el: '.swiper-pagination',
           clickable: true,
       },
+      speed: 3000,
       breakpoints: {
               0: {
                 slidesPerView: 1,
