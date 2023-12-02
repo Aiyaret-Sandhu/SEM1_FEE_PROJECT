@@ -12,7 +12,7 @@ body
     /* background: linear-gradient(to right,#e2e2e2, rgb(79, 189, 79)); */
     background: url(forgot_back.jpg) no-repeat;
     background-size: cover;
-    background-position: left;
+    background-position: top;
     display: flex;
     align-items: center;
     justify-content: center;
