@@ -1,0 +1,56 @@
+section {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+    margin-top: -9%;
+}
+
+.testimonials{
+    width: 100% !important;
+    background-image: radial-gradient(circle at 10% 20%, rgb(43, 199, 188) 0% , rgb(21,249,23) 72.9%); 
+    margin-top: -5%;
+}
+.carousel-caption{
+    margin-bottom: 7%;
+  }
+
+.single-item{
+    color: white;
+    padding: 15px;
+    margin: 50px 15px;
+}
+
+.profile{
+    margin-bottom: 30px;
+    text-align: center;    
+}
+.img-area {
+	margin: 0 15px 15px 15px;
+}
+.img-area img {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	border: none;
+}
+
+.bio h4 {
+	font-family: 'Berkshire Swash', cursive;
+}
+
+.col-md .content{
+    margin-top: 4rem;
+    font-size: 18px;
+}
+.col-md .content p {
+	text-align: justify;
+}
+.col-md .content p span {
+	font-size: 48px;
+	margin-right: 20px;
+    color: white;
+}
+
+.socials i {
+	margin-right: 25px;
+}
