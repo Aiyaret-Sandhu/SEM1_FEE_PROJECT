@@ -836,6 +836,15 @@ section
 
 
 /** media queries **/
+ @media (max-width: 1300px) {
+    .home {
+        background: url(../image/banner-img.jpg) no-repeat ;
+        background-position: center; 
+        background-size: cover;
+    }
+} 
+
+
 @media (max-width: 991px)
 {
     html 
@@ -851,6 +860,10 @@ section
         padding: 2rem;
     }
 }
+
+/* @media (max-width : 800px) {
+    .header
+} */
 
 @media (max-width: 768px)
 {
@@ -906,6 +919,7 @@ section
     border-top: 3px solid rgb(229, 229, 229) ;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    /* width: 100%; */
 }
 
 .maps{
@@ -914,4 +928,8 @@ section
     width: 100%;
     margin: auto;
     
+}
+
+iframe {
+    width: 100%;
 }
