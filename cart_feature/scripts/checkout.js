@@ -4,7 +4,7 @@ import {formatCurrency} from './utils/money.js';
 
 let cartSummaryHTML = '';
 
-let calculation =  0;
+var calculation =  0;
             
 showCalculation();
 
@@ -181,3 +181,8 @@ document.querySelectorAll('.js-delete-link')
 
 // export let total = ((pretotal/10) + (pretotal + 4.99)).toFixed(2);
 // export let Calculation = calculation;
+
+
+// var currentDate = getCurrentDate();
+// console.log(currentDate);
+

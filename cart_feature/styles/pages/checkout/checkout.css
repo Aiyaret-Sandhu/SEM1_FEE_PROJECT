@@ -30,6 +30,7 @@
      up the remaining space in the grid. */
   grid-template-columns: 1fr 350px;
   column-gap: 12px;
+  margin-top: 8rem;
 
   /* Use align-items: start; to prevent the elements
      in the grid from stretching vertically. */
@@ -47,7 +48,7 @@
 }
 
 .cart-item-container,
-.payment-summary {
+.payment-summary , .info {
   border: 0px solid rgb(222, 222, 222);
   box-shadow: 0px 1px 7px rgba(222,222,222);
   border-radius: 4px;
@@ -285,4 +286,40 @@
 
 .product-name , .product-price {
   font-family:'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.headingu {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.inp {
+  border: none;
+  box-shadow:0px 1px 4px rgba(0,0,0,0.25);
+  height: 1.4rem;
+  width: 100%;
+  display: inline-block;
+}
+
+.texti {
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.buto {
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.15rem;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  transition : all 0.5s;
+  background-color: red;
+}
+
+.buto:hover {
+  padding: 0.4rem 4rem;
+  background-color: green;
 }
