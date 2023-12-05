@@ -83,7 +83,7 @@
 .delivery-date {
   color: rgb(0, 118, 0);
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-top: 5px;
   margin-bottom: 22px;
 }
@@ -118,7 +118,7 @@
 
 .product-name {
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-bottom: 8px;
   color: rgba(0,0,0,0.8);
   margin-left: 1rem;
