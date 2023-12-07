@@ -2,7 +2,7 @@
 ## Made by :
 #### 🚀 Arshdeep 
 #### ✍🏻 Arpan 
-#### 🧮 Arpit 
+#### 🎮 Arpit 
 #### 🌟 Arshita 
 
 
