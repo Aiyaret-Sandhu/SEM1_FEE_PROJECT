@@ -11,7 +11,7 @@ The groco is a grocery website with a built in cart ,sign up, login ,blog and re
 --
 
 Run the project by clicking the link below :- > 
-https://aiyaret-sandhu.github.io/The-Groco-/
+https://aiyaret-sandhu.github.io/SEM1_FEE_PROJECT/
 
 --
 
