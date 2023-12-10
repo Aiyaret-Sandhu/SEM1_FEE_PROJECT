@@ -1,5 +1,3 @@
-Understood! Let's amp it up:
-
 ---
 
 # 🍃 The Groco 🛒
