@@ -1,5 +1,3 @@
----
-
 # 🍃 The Groco 🛒
 
 ## Crafted by a Dream Team:
