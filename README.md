@@ -1,10 +1,10 @@
 # 🍃 The Groco 🛒
 
 ## Crafted by a Dream Team:
--> 🚀 Arshdeep 
--> ✍🏻 Arpan 
--> 🎮 Arpit 
--> 🌟 Arshita
+- 🚀 Arshdeep 
+- ✍🏻 Arpan 
+- 🎮 Arpit 
+- 🌟 Arshita
   
 🌟 Behold "The Groco" 🌱, a pinnacle in online grocery excellence! Featuring an avant-garde cart system, seamless sign-up/login, a dynamic blog, and an interactive review platform, our creation is nothing short of extraordinary!
 
