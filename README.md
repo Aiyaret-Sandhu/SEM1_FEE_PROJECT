@@ -23,5 +23,5 @@ This project blossomed thanks to our dedicated team. To all readers, your contri
 
 Indulge in a fusion of convenience and quality as you peruse our collection of organic goods, delectable treats 🍫, aromatic spices 🌶️, and household essentials, all within a click's reach.
 
-From farm-fresh delights 🌽 to exotic treasures 🥭, embark on a culinary odyssey with us. Revel in doorstep delivery 🚚 and savor the simplicity of grocery shopping. Join "The Groco" family today and let's elevate your culinary endeavors to stratospheric levels 🌟 !
+From farm-fresh delights 🌽 to exotic treasures 🥭, embark on a culinary odyssey with us. Revel in doorstep delivery 🚚 and savor the simplicity of grocery shopping. Join "The Groco" family today and let's elevate your culinary endeavors to stratospheric levels 🌟 
 
