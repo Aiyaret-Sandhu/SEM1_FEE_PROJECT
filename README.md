@@ -6,8 +6,6 @@
 - 🎮 Arpit !
 - 🌟 Arshita !
 
-Hola!
-
 🌟 Behold "The Groco" 🌱, a pinnacle in online grocery excellence! Featuring an avant-garde cart system, seamless sign-up/login, a dynamic blog, and an interactive review platform, our creation is nothing short of extraordinary!!
 
 ---
