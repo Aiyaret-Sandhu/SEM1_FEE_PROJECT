@@ -11,7 +11,7 @@
 ---
 
 🚀 Dive into the project's magnificence by clicking here:
->[Experience The Groco Project](https://aiyaret-sandhu.github.io/SEM1_FEE_PROJECT/)
+>https://aiyaret-sandhu.github.io/SEM1_FEE_PROJECT/
 
 ---
 
