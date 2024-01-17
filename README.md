@@ -11,7 +11,7 @@
 ---
 
 🚀 Dive into the project's magnificence by clicking here:
->https://arshdeepsingh-coder.github.io/SEM1_FEE_PROJECT/
+https://arshdeepsingh-coder.github.io/SEM1_FEE_PROJECT/
 
 ---
 
