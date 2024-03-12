@@ -60,7 +60,8 @@ section
     color: #fff;
     display: inline-block;
     padding: 0.5rem 3rem;
-    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+    border-radius: 0.5rem;
+    /* clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%); */
 }
 
 .btn

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Form</title>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
+<link rel="icon" type="image/icon" href="img/favicon.PNG">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <meta name="description" content="The Groco - Online grocery store , wide range of products , great deals , high end products , cheap | low prices , home delivery , online payment , cash on delivery , Buy "/>
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <!-- <link rel="stylesheet" href="style.scss"> -->
+  
+</head>
+<body>
+  <header class="header">
+
+    <a href="#" class="logo">
+        <img class="groco_logo" src="img/logo.png" alt="THE GROCO LOGO">
+    </a>
+
+    <nav class="navbar">
+        <a href="#home">| &#127968; Home |</a>
+        <a href="#features"> | &#128736; Features | </a>
+        <a href="#products"> | &#128230; Products | </a>
+        <a href="#categories"> | &#128218; Categories | </a>
+        <a href="#review"> | &#127775; Review | </a>
+        <a href="#blogs"> | &#128221; Blogs | </a>
+    </nav>
+  </header>
+  <section class="container">
+    <h2 class="productForm">Food Form</h2>
+  <form id="productForm" class="add">
+    <input type="text" id="name" name="name" required placeholder="Name / नाम / ਨਾਮ"><br>
+    <input type="number" id="phone" name="phone" placeholder="Phone Number / फ़ोन नंबर / ਫੋਨ ਨੰਬਰ" required><br>
+    <input type="text" id="material" name="material" placeholder="Food Item / खाद्य सामग्री / ਭੋਜਨ ਆਈਟਮ" required><br>
+    <input type="number" id="weight" name="weight" min="0" max="200" step="0.1" required placeholder="Weight(Kg) / वजन (किग्रा) / ਭਾਰ (ਕਿਲੋਗ੍ਰਾਮ)"><br>
+    <input type="number" id="price" name="price" required placeholder="Price / कीमत / ਕੀਮਤ"><br>
+    <select id="state" name="state" required>
+      <option value=""hidden>Select State / राज्य चुनें / ਰਾਜ ਚੁਣੋ</option>
+      <option value="punjab">Punjab / पंजाब / ਪੰਜਾਬ</option>
+      <option value="haryana">Haryana / हरयाणा / ਹਰਿਆਣਾ</option>
+    </select><br>
+    <select id="district" name="district" required>
+      <option value="">Select District / जिला चुनें / ਜਿਲਾ ਚੁਣੋ</option>
+    </select><br>
+    
+    <input type="file" id="photo" />
+    <div class="file-input-wrapper">
+      <label for="photo" class="file-input-label">Choose File</label>
+    </div>
+    <br>
+    <button id="upload">Submit</button>
+
+    <div class="imgpercent"></div>
+    
+    <div class="imageurl"></div>
+
+    <br>
+    
+  </section>
+    <!-- <button type="submit">Submit</button> -->
+  </form>
+    
+</body>
+
+<script src="image.js" type="module" ></script>
+<script src="bundle.js"></script>
+
+    <script>
+         document.getElementById('state').addEventListener('change', function() {
+      var state = this.value;
+      var districtSelect = document.getElementById('district');
+      districtSelect.innerHTML = ''; // Clear existing options
+      if (state === 'punjab') {
+        // Populate Punjab districts
+        var punjabDistricts = [
+  "Not Selected / ਚੁਣਿਆ ਨਹੀਂ / चयन नहीं",
+  "Amritsar / ਅੰਮ੍ਰਿਤਸਰ / अमृतसर",
+  "Barnala / ਬਰਨਾਲਾ / बरनाला",
+  "Bathinda / ਬਠਿੰਡਾ / बठिंडा",
+  "Faridkot / ਫ਼ਰੀਦਕੋਟ / फरीदकोट",
+  "Fatehgarh Sahib / ਫਤਿਹਗੜ੍ਹ ਸਾਹਿਬ / फतेहगढ़ साहिब",
+  "Fazilka / ਫ਼ਾਜਿਲਕਾ / फ़ाज़िल्का",
+  "Firozpur / ਫ਼ਿਰੋਜ਼ਪੁਰ / फ़िरोज़पुर",
+  "Gurdaspur / ਗੁਰਦਾਸਪੁਰ / गुरदासपुर",
+  "Hoshiarpur / ਹੋਸ਼ਿਆਰਪੁਰ / होशियारपुर",
+  "Jalandhar / ਜਲੰਧਰ / जालंधर",
+  "Kapurthala / ਕਪੂਰਥਲਾ / कपूरथला",
+  "Ludhiana / ਲੁਧਿਆਣਾ / लुधियाना",
+  "Malerkotla / ਮਾਲੇਰਕੋਟਲਾ / मालेरकोटला",
+  "Mansa / ਮਾਨਸਾ / मानसा",
+  "Moga / ਮੋਗਾ / मोगा",
+  "Pathankot / ਪਠਾਨਕੋਟ / पठानकोट",
+  "Patiala / ਪਟਿਆਲਾ / पटियाला",
+  "Rupnagar / ਰੂਪਨਗਰ / रूपनगर",
+  "Sahibzada Ajit Singh Nagar / ਸਾਹਿਬਜ਼ਾਦਾ ਅਜੀਤ ਸਿੰਘ ਨਗਰ / साहिबज़ादा अजीत सिंह नगर",
+  "Sangrur / ਸੰਗਰੂਰ / संगरूर",
+  "Shahid Bhagat Singh Nagar / ਸ਼ਹੀਦ ਭਗਤ ਸਿੰਘ ਨਗਰ / शहीद भगत सिंह नगर",
+  "Sri Muktsar Sahib / ਸ੍ਰੀ ਮੁਕਤਸਰ ਸਾਹਿਬ / श्री मुक्तसर साहिब",
+  "Tarn Taran / ਤਰਨ ਤਾਰਨ / तरन तारन"
+];
+        punjabDistricts.forEach(function(district) {
+          var option = document.createElement('option');
+          option.textContent = district;
+          option.value = district;
+          districtSelect.appendChild(option);
+        });
+      } else if (state === 'haryana') {
+        // Populate Haryana districts
+        var haryanaDistricts =[
+  "Not Selected / चयनित नहीं",
+  "Ambala / अम्बाला",
+  "Bhiwani / भिवानी",
+  "Charkhi Dadri / चरखी दादरी",
+  "Fatehabad / फतेहाबाद",
+  "Faridabad / फरीदाबाद",
+  "Gurugram / गुरुग्राम",
+  "Hisar / हिसार",
+  "Jhajjar / झज्जर",
+  "Jind / जींद",
+  "Kaithal / कैथल",
+  "Karnal / करनाल",
+  "Kurukshetra / कुरुक्षेत्र",
+  "Mahendragarh / महेंद्रगढ़",
+  "Nuh / नूह",
+  "Palwal / पलवल",
+  "Panchkula / पंचकुला",
+  "Panipat / पानीपत",
+  "Rewari / रेवाड़ी",
+  "Rohtak / रोहतक",
+  "Sirsa / सिरसा",
+  "Sonipat / सोनीपत",
+  "Yamunanagar / यमुनानगर"
+];
+        haryanaDistricts.forEach(function(district) {
+          var option = document.createElement('option');
+          option.textContent = district;
+          option.value = district;
+          districtSelect.appendChild(option);
+        });
+      }
+    });
+    </script>
+    
+</html>
