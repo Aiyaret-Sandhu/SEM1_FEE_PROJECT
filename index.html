@@ -36,8 +36,7 @@
         <!-- <link rel="stylesheet" type="text/css" href="css/nstyle.css"> -->
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-        
-              
+   
     </head>
 
     <body>
@@ -59,11 +58,13 @@
                 <a href="#blogs"> | &#128221; Blogs | </a>
             </nav>
 
+            <div id="google_translate_element"></div>
+
             <div class="icons">
                 <div class="fa fa-bars" id="menu-btn" alt="menu button"></div>
                 <div class="fa fa-search" id="search-btn" alt="search button"></div>
                 <a href="https://e-commerce-mauve-six-92.vercel.app/"><div class="fa fa-shopping-cart" id="cart-btn" alt="cart button"></div></a>
-                <div class="fa fa-user" id="login-btn" alt="login button"></div>
+                <!-- <div class="fa fa-user" id="login-btn" alt="login button"></div> -->
             </div>
 
             <form class="search-form">
@@ -723,6 +724,19 @@
 
         <script src="js/readmore.js"></script>
         
+        <script src="script.js"></script>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement(
+                    {pageLanguage: 'en',
+                    includedLanguages: 'en,hi,pa'
+                },
+                    'google_translate_element'
+                );
+            } 
+        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
     </body>
 
 </html>
