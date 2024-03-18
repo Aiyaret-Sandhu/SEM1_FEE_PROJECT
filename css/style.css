@@ -94,7 +94,7 @@ section
     z-index: 1000;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 4%;
+    padding: 2rem 1rem;
     background: #fff;
     box-shadow: 0px 60px 100px rgba(11, 172, 11,0.5);
 }
@@ -114,7 +114,7 @@ section
 .header .navbar a 
 {
     font-size: 1.8rem;
-    margin: 0 1.5rem;
+    margin: 0 0.8rem;
     color: var(--black);
 }
 
@@ -933,4 +933,32 @@ section
 
 iframe {
     width: 100%;
+}
+
+/* .VIpgJd-ZVi9od-l4eHX-hSRGPd {
+    display: none;
+    background: url("./../image/grocerylogo.jpg") no-repeat;
+} */
+
+
+.goog-te-combo {
+    width: 16rem;
+    appearance: none; /* Remove default styling */
+    -webkit-appearance: none; /* Remove default styling for WebKit browsers */
+    -moz-appearance: none; /* Remove default styling for Mozilla browsers */
+    padding: 8px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 4px; /* Add border radius */
+    background-color: #fff; /* Background color */
+    font-size: 2rem; /* Font size */
+    color: #333; /
+}
+
+.goog-te-combo option {
+    font-size: 1.4rem;
+}
+
+
+.good-te-gadget {
+    font-size: 0rem;
 }

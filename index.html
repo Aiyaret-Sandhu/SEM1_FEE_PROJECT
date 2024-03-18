@@ -36,8 +36,7 @@
         <!-- <link rel="stylesheet" type="text/css" href="css/nstyle.css"> -->
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-        
-              
+   
     </head>
 
     <body>
@@ -59,11 +58,13 @@
                 <a href="#blogs"> | &#128221; Blogs | </a>
             </nav>
 
+            <div id="google_translate_element"></div>
+
             <div class="icons">
                 <div class="fa fa-bars" id="menu-btn" alt="menu button"></div>
                 <div class="fa fa-search" id="search-btn" alt="search button"></div>
-                <div class="fa fa-shopping-cart" id="cart-btn" alt="cart button"></div>
-                <div class="fa fa-user" id="login-btn" alt="login button"></div>
+                <a href="https://e-commerce-mauve-six-92.vercel.app/"><div class="fa fa-shopping-cart" id="cart-btn" alt="cart button"></div></a>
+                <!-- <div class="fa fa-user" id="login-btn" alt="login button"></div> -->
             </div>
 
             <form class="search-form">
@@ -71,7 +72,7 @@
                 <label for="search-box" class="fa fa-search"></label>
             </form>
 
-            <div class="shopping-cart">
+            <!-- <div class="shopping-cart">
                 <div class="box">
                     <i class="fa fa-trash"></i>
                     <img src="image/cart-img-1.png" alt="Watermelon image">
@@ -108,7 +109,7 @@
                 <div class="total"> total : ₹410.00/- </div>
                 <a href="https://e-commerce-mauve-six-92.vercel.app/" class="btn" target="_blank"> Buy now </a>
 
-            </div>
+            </div> -->
 
             <form action="login/index.html" target="_blank" class="login-form">
                 <h3>LOGIN NOW</h3>
@@ -139,7 +140,11 @@
         </section>
         <!--Banner Section-->
 
-        
+        <section style="margin-bottom: -6rem;">
+        <!-- Forms Section -->
+        <h1 class="heading"><a class="heading" href="./forms/part2/dist/index.html" target="_blank"> &#128736; Apply Forms <span>Farmers /Housewives /Delivery Boys</span> &#9881; </a></h1>
+
+        </section>
 
         <!--our features section -->
         <section class="features" id="features">
@@ -351,8 +356,6 @@
 
         <!-- our products section -->
 
-        <!-- Forms Section -->
-        <h1 class="heading"><a class="heading" href="./forms/part2/dist/index.html" target="_blank"> &#128736; Apply Forms <span>Farmers /Housewives /Delivery Boys</span> &#9881; </a></h1>
 
         <!-- our Categories section -->
         <section class="categories" id="categories">
@@ -532,7 +535,7 @@
                     </div>
                 </div>
             </div>
-            <h1 class="heading" style="font-size: 3rem;"> <a href="blog/blog.html" target="_blank" style="color: rgb(8, 8, 75);">Read More <span> -> </span></a></h1>
+            <h1 class="heading" style="font-size: 3rem;"> <a href="https://blogweb-rose.vercel.app/" target="_blank" style="color: rgb(8, 8, 75);">Read More <span> -> </span></a></h1>
         </section>
         <!-- Blog section -->
 
@@ -733,6 +736,19 @@
             defer>
             </script>
         
+        <script src="script.js"></script>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement(
+                    {pageLanguage: 'en',
+                    includedLanguages: 'en,hi,pa'
+                },
+                    'google_translate_element'
+                );
+            } 
+        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
     </body>
 
 </html>
