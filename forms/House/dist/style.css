@@ -299,13 +299,13 @@ body
 
   #upload {
     height: 55px;
-    width: 100%;
+    width: 80%;
     background-color: #2da1fa;
     color: #fff;
-    font-size: 25px;
-    font-weight: 400;
+    font-size: 2rem;
+    /* font-weight: 400; */
     border: none;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     cursor: pointer;
     border-radius: 6px;
     transition: all 0.2s ease;
